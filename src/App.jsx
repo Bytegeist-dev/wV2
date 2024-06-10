@@ -16,7 +16,7 @@ function App() {
   const contactRef = useRef(null);
 
   return (
-    <div className='bg-[url("./bg1.png")] h-auto object-center object-cover'>
+    <div className='md:bg-[url("./bg1.png")] bg-[url("./bg1-sm.png")] h-auto object-center object-cover'>
       <div className="fixed z-[99] top-0 w-[100vw] h-[5vh] p-4">
         <Header 
           homeRef={homeRef} 
