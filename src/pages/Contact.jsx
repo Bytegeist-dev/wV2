@@ -22,6 +22,11 @@ export default function Contact() {
 
   return (
     <div className="fadein font-poppins w-screen h-[100vh] p-4 gap-5 flex flex-col items-center justify-center">
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <textarea name="message"></textarea>
+      </form>
       <div className="w-[80vw] flex gap-2 flex-col items-start">
         <h2 className="text-4xl font-semibold text-left">
           Love to hear from you,<br></br>
@@ -44,6 +49,8 @@ export default function Contact() {
             method="POST"
             onSubmit={handleSubmit} // Call handleSubmit function on form submission
             className="flex flex-col gap-4 items-center justify-center">
+            <input type="hidden" name="form-name" value="contact" />
+
             <div className="flex gap-3 w-full">
               <input
                 type="text"
