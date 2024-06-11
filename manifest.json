@@ -1,0 +1,71 @@
+{
+    "name": "Bytegeist",
+    "short_name": "Bytegeist",
+    "description": "Bytegeist specializes in web development, app development, UI/UX design, branding, and SEO solutions. We turn visions into reality by creating innovative websites and applications with a focus on user experience, responsive design, and digital marketing based in Kochi, Kerala.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "orientation": "landscape",
+    "scope": "/",
+    "icons": [
+      {
+        "src": "/public/icons/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/public/icons/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "/public/icons/apple-touch-icon.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      },
+      {
+        "src": "/public/icons/favicon-16x16.png",
+        "sizes": "16x16",
+        "type": "image/png"
+      },
+      {
+        "src": "/public/icons/favicon-32x32.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      },
+      {
+        "src": "/public/icons/favicon.ico",
+        "sizes": "48x48",
+        "type": "image/x-icon"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "/public/screenshots/screenshot1.png",
+        "sizes": "640x480",
+        "type": "image/png"
+      },
+      {
+        "src": "/public/screenshots/screenshot2.png",
+        "sizes": "750x1334",
+        "type": "image/png"
+      }
+    ],
+    "categories": ["technology", "web development", "ui-ux-design", "branding", "seo", "landing page", "web development", "kochi", "kerala", "india"],
+    "lang": "en-US",
+    "related_applications": [
+      {
+        "platform": "web",
+        "url": "https://github.com/Bytegeist-dev",
+        "id": "github.com"
+      },
+      {
+        "platform": "web",
+        "url": "https://www.linkedin.com/company/bytegeist",
+        "id": "linkedin.com"
+      }
+    ],
+    "prefer_related_applications": false
+  }
+  
