@@ -41,32 +41,32 @@ export default function Projects() {
     },
     {
       image: "./projects/PROJECT6.webp",
-      title: "Landing Page for a Tech Company",
-      link: "",
-      description:
-        "Showcase your tech company with a modern landing page, built using ReactJS, Tailwind CSS, and Node.js.",
+      title: "UI/UX Design for Subscription Tracker App",
+      link: "https://dribbble.com/shots/22562235-Subscription-tracker-App-Streamlined-Control-Intuitive", // You can add a link to your Figma design here
+      description: "Streamline subscription management with our sleek UI/UX design for the Subscription Tracker app.",
+    },
+    
+    {
+      image: "./projects/PROJECT8.webp",
+      title: "UI/UX for CodeCraft E-Learning App",
+      link: "https://dribbble.com/shots/23434816-CodeCraft-E-Learning-App-for-Coding-Education", // You can add a link to your project here
+      description: "Transform coding education with our intuitive UI/UX design for CodeCraft. Perfect for beginners and seasoned learners, our app offers an interactive coding environment for real-time coding, testing, and debugging.",
+    },
+    
+    {
+      image: "./projects/PROJECT9.webp",
+      title: "UI/UX for Organize App Splash Screen & Login Page",
+      link: "https://dribbble.com/shots/22878626-Organize-App-Splash-Screen-Login-page",
+      description: "Experience seamless onboarding with our elegant UI/UX design for the Organize App. Our splash screen and login page provide a welcoming and intuitive introduction to the app's features.",
     },
     {
-      image: "./projects/PROJECT6.webp",
-      title: "Landing Page for a Tech Company",
-      link: "",
-      description:
-        "Showcase your tech company with a modern landing page, built using ReactJS, Tailwind CSS, and Node.js.",
-    },
-    {
-      image: "./projects/PROJECT6.webp",
-      title: "Landing Page for a Tech Company",
-      link: "",
-      description:
-        "Showcase your tech company with a modern landing page, built using ReactJS, Tailwind CSS, and Node.js.",
-    },
-    {
-      image: "./projects/PROJECT6.webp",
-      title: "Landing Page for a Tech Company",
-      link: "",
-      description:
-        "Showcase your tech company with a modern landing page, built using ReactJS, Tailwind CSS, and Node.js.",
+      image: "./projects/PROJECT7.webp",
+      title: "UI/UX for Food Scanner App",
+      link: "https://dribbble.com/shots/22494916-Food-Scanner-App-Nutrient-Analysis-and-Tracking",
+      description: "Revolutionize nutrition tracking with our intuitive UI/UX design for the Food Scanner App. Seamlessly analyze and track nutrients in your food, making informed dietary choices effortlessly.",
     }
+    
+    
   ];
   return (
     <div className='z-2 font-poppins w-screen h-auto  object-fill position-center p-4'>
@@ -77,10 +77,10 @@ export default function Projects() {
         <PinContainer
           key={index}
           title={project.title}
-          href="https://twitter.com/mannupaaji"
-          className={"mt-5"}
+          href={project.link}
+          className={"mt-5 transition ease-in-out duration-200 saturate-0 hover:saturate-100"}
         >
-          <div className="group flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem]">
+          <div className="  flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem]">
             <h3 className="max-w-xs !pb-2 !m-0 font-bold text-base text-slate-900">
               {project.title}
             </h3>
@@ -88,7 +88,7 @@ export default function Projects() {
               <span className="text-slate-500">{project.description}</span>
             </div>
             <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
-            <img src={project.image} alt={project.title} className="w-full h-[50vh] transition ease-in-out duration-200 object-cover saturate-0 group-hover:saturate-100" />
+            <img src={project.image} alt={project.title} className="w-full h-[50vh]  object-cover " />
           </div>
         </PinContainer>
       ))}

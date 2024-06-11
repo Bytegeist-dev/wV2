@@ -5,6 +5,7 @@ import {
   faInstagram,
   faTwitter,
   faLinkedin,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
@@ -18,10 +19,9 @@ export default function Footer() {
         </div>
 
         <div className="flex gap-3">
-          <FontAwesomeIcon icon={faFacebook} className="text-3xl" />
-          <FontAwesomeIcon icon={faInstagram} className="text-3xl" />
-          <FontAwesomeIcon icon={faTwitter} className="text-3xl" />
-          <FontAwesomeIcon icon={faLinkedin} className="text-3xl" />
+          <a href="https://github.com/Bytegeist-dev"><FontAwesomeIcon icon={faGithub} className="text-3xl" /></a>
+          <a href="https://www.linkedin.com/company/bytegeist"><FontAwesomeIcon icon={faLinkedin} className="text-3xl" /></a>
+          
         </div>
       </div>
       

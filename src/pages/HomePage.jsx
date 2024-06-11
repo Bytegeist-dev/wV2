@@ -3,10 +3,12 @@ import Header from "../components/Header";
 import Spline from "@splinetool/react-spline";
 import PrimaryButton from "../components/PrimaryButton";
 
-export default function HomePage() {
+export default function HomePage({ projectsRef, contactRef }) {
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
-    <div className='font-poppins w-screen h-[100vh]  object-fill position-center p-4'>
-      
+    <div className="font-poppins w-screen h-[100vh]  object-fill position-center p-4">
       <div className="w-full h-[95vh] relative overflow-hidden">
         {/* <div className="absolute  left-[-25rem] top-[3rem]  flex items-center justify-center w-full h-[80vh]">
           <main className="flex items-center justify-center z-1">
@@ -31,10 +33,16 @@ export default function HomePage() {
               services.
             </p>
             <div className="flex gap-2 w-full justify-center">
-              <button className="pointer-events-auto px-4 py-2 mt-4 bg-white text-black transition ease-in-out duration-300 border  border-black rounded-md hover:bg-black hover:text-white">
+              <button
+                onClick={() => scrollToSection(projectsRef)}
+                className="pointer-events-auto px-4 py-2 mt-4 bg-white text-black transition ease-in-out duration-300 border  border-black rounded-md hover:bg-black hover:text-white">
                 View Our Portfolio
               </button>
-              <PrimaryButton>Get a Free Consulation</PrimaryButton>
+              <div onClick={() => scrollToSection(contactRef)}>
+                <PrimaryButton >
+                  Get a Free Consulation
+                </PrimaryButton>
+              </div>
             </div>
           </div>
         </div>

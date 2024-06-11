@@ -27,7 +27,7 @@ function App() {
         />
       </div>
       <section ref={homeRef}>
-        <HomePage />
+        <HomePage projectsRef={projectsRef} contactRef={contactRef} />
       </section>
       <section ref={aboutRef}>
         <AboutUs />

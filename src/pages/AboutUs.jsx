@@ -67,12 +67,12 @@ export default function AboutUs() {
         </div>
         <div className=" fadein md:flex-row flex-col  flex w-full gap-4 md:items-end items-center p-4">
           <img
-            src="./Innovation-1x.png"
+            src="./Innovation-1x.webp"
             alt="decorative element"
             className="md:w-[20rem] md:h-[15rem] fadein hidden md:block"
           />
            <img
-            src="./Innovation-1x-sm.png"
+            src="./Innovation-1x-sm.webp"
             alt="decorative element"
             className="md:w-[20rem] md:h-[15rem] fadein block md:hidden"
           />
@@ -95,19 +95,19 @@ export default function AboutUs() {
             navigate, visually appealing, and highly functional.
           </p>
           <img
-            src="./usercentric-1x.png"
+            src="./usercentric-1x.webp"
             alt="decorative element"
             className="md:w-[25rem] md:h-[8rem] fadein w-[15rem] h-[8rem] hidden md:block"
           />
           <img
-            src="./usercentric-1x-sm.png"
+            src="./usercentric-1x-sm.webp"
             alt="decorative element"
             className="md:w-[30rem] md:h-[10rem] fadein w-[15rem] h-[8rem] block md:hidden"
           />
         </div>
         <div className=" flex w-full items-center gap-7  flex-col justify-center fadein p-4 ">
           <img
-            src="./excellence-1x.png"
+            src="./excellence-1x.webp"
             alt="decorative element"
             className="w-[15rem] h-[10rem] fadein"
           />
