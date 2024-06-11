@@ -38,6 +38,7 @@ export default function Contact() {
         {isSubmitted ? <SuccessMessage /> : (
           <form 
             name="contact" 
+            netlify
             method="POST" 
             data-netlify="true" 
             onSubmit={handleSubmit} // Call handleSubmit function on form submission
