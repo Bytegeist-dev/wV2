@@ -35,18 +35,15 @@ export default function Contact() {
       </div>
       <div className="w-[80vw]">
         {/* Conditional rendering of the success message */}
-        {isSubmitted ? <SuccessMessage /> : (
-          <form 
-            name="contact" 
+        {isSubmitted ? (
+          <SuccessMessage />
+        ) : (
+          <form
             netlify
-            method="POST" 
-            data-netlify="true" 
+            name="contact"
+            method="POST"
             onSubmit={handleSubmit} // Call handleSubmit function on form submission
-            className="flex flex-col gap-4 items-center justify-center"
-          >
-            {/* Hidden input field for Netlify form */}
-            <input type="hidden" name="form-name" value="contact" />
-            
+            className="flex flex-col gap-4 items-center justify-center">
             <div className="flex gap-3 w-full">
               <input
                 type="text"
@@ -65,9 +62,10 @@ export default function Contact() {
             <textarea
               name="message"
               placeholder="Message"
-              className="p-2 rounded-md bg-gray-100 w-full h-[10rem]"
-            ></textarea>
-            <button type="submit" className="p-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">
+              className="p-2 rounded-md bg-gray-100 w-full h-[10rem]"></textarea>
+            <button
+              type="submit"
+              className="p-2 bg-gray-800 text-white rounded-md hover:bg-gray-700">
               Submit
             </button>
           </form>
