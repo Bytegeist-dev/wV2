@@ -8,18 +8,18 @@ export default function HomePage({ projectsRef, contactRef }) {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="font-poppins w-screen h-[100vh]  object-fill position-center p-4">
+    <div className="font-poppins w-auto h-auto p-4">
       <div className="w-full h-[95vh] relative overflow-hidden">
-        {/* <div className="absolute  left-[-25rem] top-[3rem]  flex items-center justify-center w-full h-[80vh]">
+        <div className="hidden md:flex absolute  top-[3rem]  flex items-center justify-center w-full h-[80vh]">
           <main className="flex items-center justify-center z-1">
             <div className="w-full h-full spline-canvas">
               <Spline
-                scene="https://prod.spline.design/5NAzWKirYd5oNoWD/scene.splinecode"
+                scene="https://prod.spline.design/o-X090dFjLALbunI/scene.splinecode"
                 className="w-20 h-20"
               />
             </div>
           </main>
-        </div> */}
+        </div>
         <div className="z-3 absolute flex items-center pointer-events-none justify-center w-full h-full">
           <div className="text-center flex flex-col items-center justify-center gap-4 pointer-events-none">
             <h1 className="text-4xl font-bold text-gray-800 font-poppins">
